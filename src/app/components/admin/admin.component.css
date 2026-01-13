@@ -1,8 +1,8 @@
 
 .content{
     padding: 20px 10px;
-    /* background-color: rgb(4, 92, 207);  */
-    background-color: #045ccf; 
+        background-color: var(--gray-50);
+    /* background-color: #045ccf;  */
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none;  /* Internet Explorer 10+ */

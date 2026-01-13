@@ -22,8 +22,15 @@ mat-sidenav{
 }
 
 .active{
-    background-color: #045ccf;
-    border-left: 5px solid white;
+    background-color: white;
+    border-left: 5px solid #045ccf;
+   span{
+     color:#045ccf!important;
+   }
+}
+
+.active-text{
+      color:#045ccf!important;
 }
 
 ::ng-deep .mat-mdc-focus-indicator{

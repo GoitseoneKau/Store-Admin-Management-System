@@ -27,7 +27,7 @@ export class AdminComponent {
 
   screenWidth = signal(0);
 
-  @HostListener('window:resize', ['$event'])
+  @HostListener('window:resize')
   getScreenSize() {
   
       this.screenWidth.set(window.innerWidth)

@@ -29,6 +29,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { AddEditProductComponent } from '../add-edit-product/add-edit-product.component';
 import { ErrorDialogComponent } from '../error-dialog/error-dialog.component';
 import { HttpErrorResponse } from '@angular/common/http';
+import { ItemCardComponent } from "../item-card/item-card.component";
 
 @Component({
   selector: 'app-productlist',
@@ -46,7 +47,8 @@ import { HttpErrorResponse } from '@angular/common/http';
     MatButtonModule,
     NgxSpinnerModule,
     FormsModule,
-  ],
+    ItemCardComponent
+],
   templateUrl: './productlist.component.html',
   styleUrl: './productlist.component.css',
   changeDetection: ChangeDetectionStrategy.Default,

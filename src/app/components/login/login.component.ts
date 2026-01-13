@@ -65,6 +65,26 @@ export class LoginComponent {
           }
         }
        })
+    }else{
+      this.error = "Please fill all the fields. logging in with demo user"
+      this.loginService.login("kevinryan","kev02937@").subscribe({
+        next:(token)=>{
+          if(token){
+            //if succesfull redirect to dashboard
+            this.router.navigate(["/admin/dashboard"],{replaceUrl:true})
+          }
+        },
+        error:(error)=>{
+          //if unsuccessfuul return error
+          if(error.status==401){
+            //if unknown error
+            this.error = "failed to login,check your password and username"
+          }if(error.status==0){
+            //if unstable/no interne connection
+            this.error = "No connection. Check Your internet"
+          }
+        }
+       })
     }
   }
 

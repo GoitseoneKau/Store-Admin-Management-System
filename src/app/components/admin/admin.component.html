@@ -1,6 +1,6 @@
 <app-header [(collapsed)]="collapse" />
 
-<mat-sidenav-container (backdropClick)="collapse.set(false);" autosize>
+<mat-sidenav-container (backdropClick)="collapse.set(false)" autosize>
 
     <mat-sidenav class="indigo darken-4"  [style.width]="this.sideNavWidth()" disableClose [mode]="modeChange()" [opened]="open()">
         <app-sidebar [collapsed]="collapse()"  />

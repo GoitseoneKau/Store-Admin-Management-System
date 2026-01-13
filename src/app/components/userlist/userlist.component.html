@@ -48,11 +48,13 @@
       @for(user of users();track user.id){
         <!-- list of users -->
         <div *ngIf="!user.admin" class="user-container">
-          <p class="user-name">  {{admin.id > user.id ? user.id : user.id-1}}. {{user.name.firstname|capitalLetter}}  {{user.name.lastname|capitalLetter}}</p>
-          <div  class="user-item">
-              <p class="user-name detail"><b>Username</b>: {{user.username}}</p>
-              <p class="user-email detail"><b>Email</b>: {{user.email}}</p>
-              <p class="user-number detail"><b>Role</b>: {{user.admin?"Admin":"User"}}</p>
+          <p class="user-icon"> <i class="medium material-icons">account_circle</i></p>
+          <div class="user-content">
+            <p class="user-header">  {{admin.id > user.id ? user.id : user.id-1}}. {{user.name.firstname|capitalLetter}}  {{user.name.lastname|capitalLetter}} - {{user.admin?"Admin":"User"}}</p>
+          
+              <p class="user-name"><b>Username</b>: {{user.username}}</p>
+              <p class="user-email"><b>Email</b>: {{user.email}}</p>
+     
           </div>
         </div>
       }

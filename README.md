@@ -9,7 +9,8 @@
 <h1 align="center" style="font-family:Poppins;font-size:4em"><span style="color:#2196f3">FakeStore Management System</span> 
 </h1>
 <h4 align="center" style="font-family:Poppins;font-size:1.2em;margin-top:20px">Simple Admin Management System Written In Angular.</h4>
-<p align="center">A simple project highlighting crud and user interaction using Material Design.</p>
+<p align="center">A simple project highlighting crud and user interaction using API and Material Design.</p>
+<p align="center">Uses fakestore free API for it's, user data and product data.</p>
 
 
 # Table of Contents
@@ -29,8 +30,30 @@
 
 
 # Introduction
-This is a basic app showing CRUD operations _Create_, _Read_, _Update_ and _Delete_ methods.
+This is a basic app showing CRUD operations _Create_, _Read_, _Update_ and _Delete_ methods for a store management system. 
 
+Being able to add a product listing or having user info for leads in marketing, is something most businesses need. So this basic app shows just that, an ability to manage new users, statistics to help  in business operations and to upload or update a product on store application.
+
+here are some selected user login information from the fakestore API you may use for the demo:
+```
+{
+    "email": "john@gmail.com",
+    "username": "johnd",
+    "password": "m38rmF$",
+}
+,
+{
+    "email": "morrison@gmail.com",
+    "username": "mor_2314",
+    "password": "83r5^_"
+},
+{
+    "email": "kevin@gmail.com",
+    "username": "kevinryan",
+    "password": "kev02937@"
+}
+
+```
 
 
 
